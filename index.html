@@ -1,23 +1,354 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
-    </nav>
-    <main>
-      <h1>Home page</h1>
-    </main>
-  </body>
-</html>
+
+    <!-- JSON-LD Structured Data (BlogPosting & FAQPage) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://www.yourdomain.com/dental-insurance-guide"
+        },
+        "headline": "치과보험적용 완벽 가이드 | 2026년 최신 정보, 평균 금액, 장단점 비교 및 추천",
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://www.yourdomain.com/images/dental-insurance-og.jpg",
+          "width": 1200,
+          "height": 630
+        },
+        "datePublished": "2026-01-20T09:00:00+09:00",
+        "dateModified": "2026-01-20T09:00:00+09:00",
+        "author": {
+          "@type": "Person",
+          "name": "치과보험 전문가"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "치과보험 리서치센터",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.yourdomain.com/images/logo.png"
+          }
+        },
+        "description": "2026년 치과보험 적용 기준, 평균 금액, 장단점 비교 및 가입 요령 상세 분석. 임플란트, 충치, 크라운 등 주요 치료 항목별 보험 적용 여부와 가입 전 유의사항을 자세히 안내합니다.",
+        "articleBody": "대한민국 국민들의 치과 진료비 부담이 갈수록 증가하면서 치과보험 가입에 대한 관심이 높아지고 있습니다. ... [20,000자 이상의 본문 내용]"
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "치과보험 임플란트 적용은 몇 개까지 가능한가요?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "일반적으로 치과보험의 임플란트 적용 개수는 연간 3개로 제한됩니다. 다만, 보험사 및 상품에 따라 평생 보장 개수가 다를 수 있으니 가입 전 확인이 필수적입니다."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "치과보험 가입 시 고지해야 할 사항은 무엇인가요?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "최근 1년 이내 치과 진료 여부, 5년 이내 치주질환 치료 여부 등을 고지해야 합니다. 고지의무 위반 시 보험금 지급 거절 사유가 될 수 있습니다."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "치과보험 가입 시 면책기간과 감액기간이 있나요?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "네, 대부분의 치과보험은 가입 후 일정 기간(면책기간) 동안 보장이 제한됩니다. 면책기간 이후에도 일정 기간(감액기간) 동안은 보험금의 일부만 지급되는 경우가 많으니 확인해야 합니다."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "치과보험 평균 금액은 얼마인가요?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "치과보험 평균 금액은 연령, 성별, 보장 범위에 따라 크게 달라집니다. 30대 기준 월 2~4만원대가 일반적이며, 보장 범위가 넓은 상품은 5만원 이상이 될 수도 있습니다. 여러 상품을 비교하여 최적의 견적을 찾는 것이 중요합니다."
+            }
+          }
+        ]
+      }
+    </script>
+
+    <!-- Custom CSS Styling (Soft Colors, Clear Hierarchy) -->
+    <style>
+        /* Base Styling */
+        body { font-family: 'Noto Sans KR', 'Segoe UI', sans-serif; margin: 0; padding: 0; line-height: 1.7; color: #333; background-color: #fcfcfc; }
+        header { background: linear-gradient(135deg, #a8dadc, #457b9d); color: #fff; padding: 40px 20px; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        h1 { font-size: 2.5rem; margin-bottom: 10px; font-weight: 700; }
+        header p { font-size: 1.2rem; margin-bottom: 20px; font-weight: 300; }
+        section { padding: 40px 20px; max-width: 1000px; margin: 0 auto; }
+        h2 { font-size: 2rem; border-bottom: 2px solid #a8dadc; padding-bottom: 10px; margin-top: 40px; color: #1d3557; font-weight: 600; }
+        h3 { font-size: 1.5rem; color: #457b9d; margin-top: 30px; margin-bottom: 15px; font-weight: 500; }
+        p { margin-bottom: 20px; font-size: 1.1rem; }
+        ul, ol { margin-bottom: 20px; padding-left: 25px; font-size: 1.1rem; }
+        li { margin-bottom: 10px; }
+        strong { font-weight: 600; color: #e63946; }
+        a { color: #1d3557; text-decoration: none; border-bottom: 1px dashed #a8dadc; transition: color 0.3s ease; }
+        a:hover { color: #e63946; border-bottom-color: #e63946; }
+
+        /* CTA Button */
+        .cta-btn { background: #e63946; padding: 15px 30px; color: #fff; text-decoration: none; font-weight: bold; border-radius: 8px; display: inline-block; margin-top: 25px; font-size: 1.1rem; transition: background-color 0.3s ease; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        .cta-btn:hover { background-color: #d62828; }
+
+        /* Keyword/Metadata Section */
+        .keywords { background-color: #f1faee; padding: 20px; border-radius: 8px; margin-bottom: 30px; }
+        .keywords span { display: inline-block; background-color: #a8dadc; color: #1d3557; padding: 5px 10px; margin: 5px; border-radius: 5px; font-size: 0.9rem; font-weight: 500; }
+
+        /* Table Styling */
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; background-color: #fff; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+        th, td { border: 1px solid #ddd; padding: 12px; text-align: left; font-size: 1.0rem; }
+        th { background-color: #457b9d; color: #fff; font-weight: 600; }
+        tr:nth-child(even) { background-color: #f9f9f9; }
+        tr:hover { background-color: #f1f1f1; }
+
+        /* Form Styling (Dwell Time optimization) */
+        form { background-color: #f1faee; padding: 30px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); margin-top: 30px; }
+        form label { display: block; margin-bottom: 15px; font-weight: 500; font-size: 1.1rem; color: #1d3557; }
+        form input[type="text"], form input[type="number"], form select { width: calc(100% - 22px); padding: 12px; margin-top: 5px; border: 1px solid #ccc; border-radius: 5px; font-size: 1.0rem; transition: border-color 0.3s; }
+        form input[type="text"]:focus, form input[type="number"]:focus, form select:focus { border-color: #e63946; outline: none; }
+        form button { background: #1d3557; color: #fff; border: none; padding: 15px; border-radius: 5px; font-weight: bold; cursor: pointer; font-size: 1.1rem; margin-top: 10px; width: 100%; transition: background-color 0.3s ease; }
+        form button:hover { background-color: #457b9d; }
+
+        /* Quiz Section */
+        .quiz-container { background-color: #f1faee; padding: 30px; border-radius: 10px; margin-top: 30px; }
+        .quiz-item { margin-bottom: 20px; border-bottom: 1px dashed #a8dadc; padding-bottom: 15px; }
+        .quiz-question { font-weight: bold; font-size: 1.1rem; color: #457b9d; margin-bottom: 10px; }
+        .quiz-result { margin-top: 15px; font-weight: bold; color: #e63946; font-size: 1.1rem; }
+
+        /* Footer */
+        footer { background: #f1f1f1; padding: 30px 20px; text-align: center; font-size: 0.9rem; color: #555; margin-top: 50px; }
+
+        /* Responsiveness */
+        @media (max-width: 768px) {
+            h1 { font-size: 2rem; }
+            h2 { font-size: 1.8rem; }
+            h3 { font-size: 1.3rem; }
+            p, ul, ol, th, td { font-size: 1rem; }
+            .cta-btn { font-size: 1rem; padding: 12px 25px; }
+            section { padding: 20px 15px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>치과보험 적용 기준 완벽 분석: 2026년 최신 가이드</h1>
+        <p>치과 치료, 더 이상 비용 걱정 없이! 임플란트, 충치, 크라운 등 주요 항목별 보장 범위와 최적의 가입 전략을 제시합니다.</p>
+        <a href="#quote-form" class="cta-btn">내게 맞는 치과보험 무료 견적 비교하기</a>
+    </header>
+
+    <section id="main-content">
+        <!-- Section 1: Introduction -->
+        <h2>치과 치료 비용의 현실과 치과보험의 필요성</h2>
+        <p>대한민국 국민들의 치과 진료비 부담은 해마다 증가하고 있습니다. 건강보험심사평가원의 통계에 따르면 1인당 평균 치과 진료비가 지속적으로 상승하고 있으며, 특히 임플란트나 크라운과 같은 비급여 치료의 경우 수백만 원에 달하는 비용이 발생하여 환자에게 큰 경제적 압박으로 작용합니다. <a href="[링크: 보건복지부 치과 건강보험 관련 자료]" target="_blank">보건복지부 통계에 따르면</a> (2026년 기준) 65세 이상 임플란트 건강보험 적용이 확대되었음에도 불구하고, 젊은 층이나 특정 치료에 대한 비급여 부담은 여전히 높습니다. 이러한 이유로 치과보험은 선택이 아닌 필수가 되고 있습니다. 치과보험을 통해 충치, 임플란트, 보철 치료 등 고액의 치료비에 대한 경제적 부담을 효과적으로 대비할 수 있습니다.</p>
+
+        <!-- Section 2: Core Keywords & FAQs -->
+        <div class="keywords">
+            <h3>함께 많이 찾는 키워드 (자동완성 및 연관검색어 분석)</h3>
+            <span>치과보험적용</span>
+            <span>치과보험 추천</span>
+            <span>치과보험 비교</span>
+            <span>임플란트 보험 적용</span>
+            <span>치과보험 장단점</span>
+            <span>치과보험 금액</span>
+            <span>치과보험 평균</span>
+            <span>치과보험 저렴한곳</span>
+            <span>치과보험 싼곳</span>
+            <span>치과보험 내돈내산 후기</span>
+            <span>치과보험 가입 순위</span>
+            <span>치과보험 차이점</span>
+            <span>어린이 치과보험</span>
+            <span>비갱신형 치과보험</span>
+            <span>치과보험 면책기간</span>
+            <span>치과보험 감액기간</span>
+            <span>치과보험 고지의무</span>
+            <span>치과 임플란트 비용</span>
+            <span>충치 치료 보험 적용</span>
+            <span>크라운 보험 적용</span>
+            <span>레진 보험 적용</span>
+            <span>치과보험 견적</span>
+            <span>치아 보험 보장 내용</span>
+            <span>치과보험 만기 환급형</span>
+            <span>치과보험 순수 보장형</span>
+            <span>치과보험 가입 조건</span>
+            <span>치과보험 예상 금액</span>
+        </div>
+
+        <!-- Section 3: Detailed Coverage Comparison (Table) -->
+        <h2>치과보험 핵심 비교 분석: 보장형 VS 진단형, 어떤 상품이 유리할까?</h2>
+        <p>치과보험 상품은 크게 두 가지 유형으로 나뉩니다. <strong>보장형(진단 없이 가입)</strong>과 <strong>진단형(진단 후 가입)</strong>입니다. 두 유형의 장단점과 예상 금액을 비교하여 자신에게 맞는 상품을 선택하는 것이 중요합니다. 특히 2026년 현재 시장에서는 가입 절차가 간편한 보장형 상품이 주를 이루지만, 보장 범위가 더 넓고 한도가 높은 진단형 상품도 존재합니다.</p>
+
+        <table id="comparison-table">
+            <thead>
+                <tr>
+                    <th>구분</th>
+                    <th>보장형 치과보험</th>
+                    <th>진단형 치과보험</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>가입 조건</td>
+                    <td>간단한 고지사항 확인 (최근 치료 여부 등)</td>
+                    <td>치과 진단서 제출 또는 치과 방문 진단 필요</td>
+                </tr>
+                <tr>
+                    <td>보험료 (평균 금액)</td>
+                    <td>상대적으로 저렴함 (월 2~4만원대 예상)</td>
+                    <td>상대적으로 높음 (월 4~6만원대 예상)</td>
+                </tr>
+                <tr>
+                    <td>보장 범위</td>
+                    <td>대부분의 상품이 정액 보장. 1년 내 임플란트 3개, 크라운 3개 등 한도 설정</td>
+                    <td>보장 한도가 높고, 보험사 재량에 따라 더 넓은 범위 보장 가능</td>
+                </tr>
+                <tr>
+                    <td>장점</td>
+                    <td>가입 절차가 간편하고, 치과 치료가 시급한 경우에도 가입 가능성이 높음.</td>
+                    <td>고액 치료(임플란트, 크라운)에 대한 보장 한도가 높고, 이미 치아 상태가 좋지 않은 사람에게 유리.</td>
+                </tr>
+                <tr>
+                    <td>단점</td>
+                    <td>면책기간 및 감액기간이 존재하며, 보장 한도가 정해져 있어 보장이 충분치 않을 수 있음.</td>
+                    <td>보험료가 비싸고, 진단 결과에 따라 가입 거절될 수 있음.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Section 4: Treatment Specific Coverage Details -->
+        <h2>주요 치과 치료 항목별 보험 적용 여부 (임플란트, 크라운, 충치)</h2>
+        <p>치과보험을 가입하는 가장 큰 이유는 비급여 치료의 높은 비용을 대비하기 위함입니다. 그러나 모든 치료 항목에 보험이 적용되는 것은 아니며, 가입 상품의 종류에 따라 적용 여부와 금액이 달라집니다. 특히 <strong>임플란트 보험 적용</strong>, <strong>충치 치료 보험 적용</strong>, <strong>크라운 보험 적용</strong>은 가입자들이 가장 궁금해하는 부분입니다.</p>
+
+        <h3>1. 임플란트 보험 적용: 횟수와 금액</h3>
+        <p>임플란트는 치과 치료 중 가장 고액이 드는 항목 중 하나입니다. 대부분의 치과보험은 임플란트를 비급여 항목으로 보장하며, 연간 보장 한도를 설정합니다. 2026년 기준, 일반적인 상품의 보장 한도는 연간 3개입니다. (상품별로 평생 보장 개수, 연간 보장 개수가 다름) 보험금 지급액은 상품에 따라 임플란트 1개당 100만 원~200만 원 수준으로 설정됩니다. 가입 전 반드시 '면책기간(90일 또는 1년)'과 '감액기간(1~2년)'을 확인해야 합니다. 임플란트 예상 비용이 궁금하다면 여러 보험사의 견적을 비교해보고, 본인의 나이와 치아 상태를 고려한 맞춤형 상품을 찾는 것이 현명합니다.</p>
+
+        <h3>2. 충치 치료 보험 적용: 레진, 인레이, 온레이</h3>
+        <p>충치 치료는 크게 급여 항목과 비급여 항목으로 나뉩니다. 아말감은 건강보험 적용이 되지만, 레진이나 인레이, 온레이는 비급여 항목입니다. <strong>레진 보험 적용</strong>은 최근 건강보험 확대 정책에 따라 만 12세 이하 영구치에 한해 건강보험이 적용되고 있지만, 성인에게는 비급여입니다. 치과보험은 성인의 레진, 인레이, 온레이 치료에 대해 보장을 제공합니다. 상품에 따라 보장 금액이 달라지며, 레진 1개당 5~10만원, 인레이/온레이 1개당 10~20만원 수준입니다.</p>
+
+        <h3>3. 크라운 및 보철 치료 보험 적용</h3>
+        <p>크라운은 충치가 심하거나 신경 치료를 한 후 치아 전체를 씌우는 보철 치료입니다. 크라운도 비급여 항목으로 분류되며, 치과보험의 핵심 보장 중 하나입니다. 일반적으로 치과보험은 연간 3개까지 크라운 보장을 제공하며, 보장 금액은 20~40만원 수준입니다. 또한 브릿지나 틀니와 같은 보철 치료도 보험이 적용되는데, 이는 나이가 많거나 치아가 많이 손실된 경우 중요한 보장입니다.</p>
+
+        <!-- Section 5: Dwell Time Optimization - Interactive Quiz -->
+        <section class="quiz-container">
+            <h2>나에게 맞는 치과보험 자가 진단 테스트 (Dwell Time Enhancer)</h2>
+            <p>간단한 4가지 질문을 통해 어떤 유형의 치과보험이 적합한지 알아보세요.</p>
+            <form id="quiz-form">
+                <div class="quiz-item">
+                    <div class="quiz-question">Q1. 현재 치아 상태에 대한 스스로의 평가는?</div>
+                    <label><input type="radio" name="q1" value="a"> A. 매우 건강하다. 최근 5년간 치과 방문 경험이 거의 없다.</label><br>
+                    <label><input type="radio" name="q1" value="b"> B. 충치나 잇몸 질환이 종종 발생한다. 예방 치료가 필요하다.</label><br>
+                    <label><input type="radio" name="q1" value="c"> C. 이미 임플란트나 크라운 등 고액 치료가 필요하다는 진단을 받았다.</label>
+                </div>
+                <div class="quiz-item">
+                    <div class="quiz-question">Q2. 보험료 예산은 월 얼마 정도 예상하시나요?</div>
+                    <label><input type="radio" name="q2" value="a"> A. 3만원 미만. 저렴한 비용으로 기본적인 보장을 원한다.</label><br>
+                    <label><input type="radio" name="q2" value="b"> B. 3만원 ~ 5만원. 보장 범위가 넓은 상품을 선호한다.</label><br>
+                    <label><input type="radio" name="q2" value="c"> C. 5만원 이상. 고액 치료에 대한 충분한 보장을 원한다.</label>
+                </div>
+                <div class="quiz-item">
+                    <div class="quiz-question">Q3. 비갱신형과 갱신형 중 선호하는 방식은?</div>
+                    <label><input type="radio" name="q3" value="a"> A. 비갱신형. 초기에 보험료가 비싸더라도 만기까지 동일한 금액을 원한다.</label><br>
+                    <label><input type="radio" name="q3" value="b"> B. 갱신형. 저렴한 보험료로 시작하고 싶다.</label>
+                </div>
+                <div class="quiz-item">
+                    <div class="quiz-question">Q4. 치과보험 가입 시 가장 중요하게 생각하는 것은?</div>
+                    <label><input type="radio" name="q4" value="a"> A. 면책기간 없이 바로 보장받는 것.</label><br>
+                    <label><input type="radio" name="q4" value="b"> B. 임플란트나 크라운의 보장 금액이 높은 것.</label><br>
+                    <label><input type="radio" name="q4" value="c"> C. 보장 기간이 긴 것 (100세 만기 등).</label>
+                </div>
+                <button type="button" onclick="showQuizResult()">결과 확인하기</button>
+                <div class="quiz-result" id="quiz-result"></div>
+            </form>
+        </section>
+
+        <!-- Section 6: How to Choose & Avoid Pitfalls -->
+        <h2>치과보험 가입 전 꼭 확인해야 할 5가지 핵심 사항 (장점과 단점 비교)</h2>
+        <p>치과보험은 상품별 <strong>장단점</strong>이 매우 명확합니다. <strong>내돈내산 후기</strong>를 참고하거나 전문가의 <strong>추천</strong>을 받기 전에, 반드시 아래 5가지 핵심 사항을 확인하여 <strong>저렴한곳</strong>, <strong>싼곳</strong>만 찾다가 보장을 놓치는 실수를 방지해야 합니다.</p>
+
+        <h3>1. 면책기간과 감액기간 확인</h3>
+        <p>치과보험의 가장 큰 <strong>단점</strong> 중 하나는 면책기간과 감액기간입니다. 이는 보험 가입 후 일정 기간 동안 보장이 제한되거나 일부만 지급되는 기간을 의미합니다. 일반적으로 면책기간은 가입일로부터 90일 또는 1년이며, 감액기간은 1~2년입니다. 즉, 가입 즉시 치과 치료를 받아도 보험금 지급이 안 될 수 있습니다. 이는 보험사 입장에서는 보험금을 노리고 가입하는 '역선택'을 방지하기 위함입니다. 따라서 치과 치료가 시급한 상황이라면 가입 전 면책/감액기간을 확인하고, 가능한 짧은 상품을 선택하는 것이 <strong>장점</strong>이 됩니다.</p>
+
+        <h3>2. 비갱신형 vs 갱신형: 보험료 예측</h3>
+        <p><strong>비갱신형 치과보험</strong>은 가입 시점의 보험료가 만기 시점까지 변동되지 않습니다. 초기 보험료는 갱신형보다 비싸지만, 장기적으로 총 납입 보험료가 더 저렴해질 수 있습니다. <strong>갱신형 치과보험</strong>은 초기 보험료가 저렴하지만, 갱신 시점(보통 5~10년)마다 연령 증가와 의료수가 상승 등을 반영하여 보험료가 인상됩니다. 2026년 기준으로 갱신형 보험료 인상률이 높아질 수 있다는 점을 고려하여, 장기적으로 치아 관리를 계획한다면 비갱신형 상품이 유리할 수 있습니다.</p>
+
+        <h3>3. 보장 한도 및 보장 금액 확인</h3>
+        <p>임플란트 1개당 <strong>예상 금액</strong>이 얼마인지, 크라운 1개당 <strong>가격</strong>이 얼마인지 비교하는 것이 중요합니다. 상품에 따라 임플란트 보장 한도가 연간 1개인 경우도 있고, 3개인 경우도 있습니다. 또한, 보장 금액도 100만 원부터 200만 원까지 다양합니다. 단순히 <strong>저렴한곳</strong>을 찾는 것보다는 보장 금액이 높은 상품을 선택하는 것이 중요합니다. 특히 <strong>치과보험 순위</strong>를 매길 때 이 보장 한도가 가장 중요한 기준이 됩니다.</p>
+
+        <h3>4. 치과 치료 '횟수' 보장 여부 (재료 제한)</h3>
+        <p>충치 치료 시 '재료'에 대한 제한이 있는지 확인해야 합니다. 일부 상품은 아말감, 레진, 인레이, 온레이 등을 포괄적으로 보장하지만, 일부는 특정 재료(예: 레진)만 보장합니다. 또한, 연간 보장 횟수가 제한될 수 있습니다. 2026년 최신 상품들은 보장 범위가 확대되는 추세이므로, 꼼꼼히 <strong>비교</strong>해봐야 합니다.</p>
+
+        <h3>5. 치과보험 가입 시 고지의무</h3>
+        <p>치과보험 가입 시 반드시 고지의무를 준수해야 합니다. 과거 1년 이내 치과 진료 이력(충치, 잇몸병 등)이나 5년 이내 치주질환 치료 이력 등 보험사가 요구하는 사항을 정확하게 알려야 합니다. 고지의무 위반 시 추후 보험금 지급이 거절될 수 있으며, 심각할 경우 계약이 해지될 수 있습니다. 건강보험심사평가원의 진료 기록을 토대로 고지사항을 정확하게 확인하는 것이 중요합니다.</p>
+
+        <!-- Section 7: External Credibility Links -->
+        <h2>공인된 신뢰성 있는 정보 출처 (E-A-T 확보)</h2>
+        <p>치과보험에 대한 자세한 정보는 아래 공신력 있는 기관의 자료를 참고할 수 있습니다. <a href="[링크: 보건복지부 홈페이지]" target="_blank">보건복지부</a>, <a href="[링크: 건강보험심사평가원 홈페이지]" target="_blank">건강보험심사평가원</a>, <a href="[링크: Naver 지식백과 치과 관련 용어]" target="_blank">네이버 지식백과</a>, <a href="[링크: 금융감독원 파인 금융상품]" target="_blank">금융감독원 파인(FINE)</a>, <a href="[링크: 나무위키 치과보험 항목]" target="_blank">나무위키</a> 등에서 치과 관련 용어, 건강보험 적용 범위, 금융 상품 정보를 확인할 수 있습니다.</p>
+
+        <!-- Section 8: Call to Action Form (Engagement and Lead Generation) -->
+        <section id="quote-form">
+            <h2>나만을 위한 맞춤형 치과보험 견적 신청하기</h2>
+            <p>2026년 최신 치과보험 상품을 전문가와 함께 <strong>비교</strong>하고 <strong>추천</strong>받아보세요. 간단한 정보를 입력하시면 <strong>내돈내산</strong> 후기를 바탕으로 한 최적의 <strong>견적</strong>을 받아볼 수 있습니다.</p>
+            <form action="/submit-quote-dental" method="post">
+                <label>이름: <input type="text" name="name" placeholder="이름" required></label>
+                <label>연락처: <input type="number" name="phone" placeholder="휴대폰 번호 (하이픈 없이)" required></label>
+                <label>생년월일: <input type="text" name="dob" placeholder="예: 19800101" required></label>
+                <label>최근 치과 진료 이력 (1년 이내):
+                    <select name="history">
+                        <option value="none">없음</option>
+                        <option value="checkup">정기 검진만</option>
+                        <option value="fillings">충치 치료 (레진/인레이)</option>
+                        <option value="root-canal">신경 치료</option>
+                        <option value="gum-disease">잇몸 치료</option>
+                        <option value="implant-plan">임플란트 계획</option>
+                    </select>
+                </label>
+                <label>궁금한 보장 항목:
+                    <select name="interest">
+                        <option value="total">전반적인 보장 범위</option>
+                        <option value="implant">임플란트 보장</option>
+                        <option value="crown">크라운 보장</option>
+                        <option value="children">어린이 치과보험</option>
+                    </select>
+                </label>
+                <button type="submit">맞춤 견적 요청하기</button>
+            </form>
+        </section>
+    </section>
+
+    <!-- Dwell Time Optimization Script -->
+    <script>
+        function showQuizResult() {
+            var q1 = document.querySelector('input[name="q1"]:checked');
+            var q2 = document.querySelector('input[name="q2"]:checked');
+            var q3 = document.querySelector('input[name="q3"]:checked');
+            var q4 = document.querySelector('input[name="q4"]:checked');
+            var resultElement = document.getElementById('quiz-result');
+
+            if (q1 && q2 && q3 && q4) {
+                var q1_value = q1.value;
+                var q2_value = q2.value;
+                var q3_value = q3.value;
+                var q4_value = q4.value;
+
+                var resultText = "";
+
+                if (q1_value === 'a' && q2_value === 'a' && q3_value === 'a') {
+                    resultText = "<strong>[A형: 예방/장기 대비형]</strong> 고객님은 현재 치아 상태가 양호하며 장기적인 관리를 원하십니다. 비갱신형 순수보장형 상품으로 저렴하게 대비하는 것을 추천합니다.";
+                } else if (q1_value === 'c' || q4_value === 'b') {
+                    resultText = "<strong>[B형: 고액 치료 집중 보장형]</strong> 고객님은 고액 치료에 대한 대비가 시급합니다. 면책기간이 짧고 임플란트/크라운 보장 한도가 높은 상품을 집중적으로 비교해보세요.";
+                } else {
+                    resultText = "<strong>[C형: 균형 잡힌 관리형]</strong> 고객님은 예방과 치료를 모두 중요하게 생각하십니다. 갱신형/비갱신형 상품의 장단점을 비교하여 본인의 상황에 맞는 균형 잡힌 상품을 선택하는 것이 좋습니다.";
+                }
+                resultElement.innerHTML = resultText;
+            } else {
+                resultElement.innerHTML = "모든 질문에 답해주세요.";
+            }
+        }
+    </script>
+
+  
